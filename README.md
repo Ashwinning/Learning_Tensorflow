@@ -6,8 +6,7 @@
 - open terminal
 - enter
 ```bash
-nvidia-docker run -v $(pwd):/home -it -p 8888:8888 /
-ashwinning/tensorflow:0.1 /bin/bash
+nvidia-docker run -v $(pwd):/home -it -p 8888:8888 ashwinning/tensorflow:0.1 /bin/bash
 ```
 
 # Notes

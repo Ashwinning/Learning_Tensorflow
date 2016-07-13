@@ -1,17 +1,20 @@
 # Personal Repo
 ## Learning Tensorflow.
 
+## To run it with the mount
+- go to the location you want to run the file from
+- open terminal
+- enter
+```bash
+nvidia-docker run -v $(pwd):/home -it -p 8888:8888 /
+ashwinning/tensorflow:0.1 /bin/bash
+```
+
 # Notes
 
-- Command to run GPU tensorflow with the volume mounted:
-```bash
-nvidia-docker run \
--v /media/ashwin/6484DC2984DC000A/tensorflow-gpu:/home \
--it -p 8888:8888 gcr.io/tensorflow/tensorflow:latest-gpu \
-/bin/bash
-```
 - `MNIST_data` is gitignored.
 
+----
 
 # FUN FACT
 The tensorflow-gpu docker image (gcr.io/tensorflow/tensorflow:latest-gpu) is not correctly configured with cuDNN which is **BULLSHIT**. (as of July 11, 2016)

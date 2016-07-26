@@ -1,2 +1,5 @@
 # The entire MNIST dataset.
 /MNIST_data
+/cuda
+cuda_7.5.18_linux.run
+cudnn-7.0-linux-x64-v4.0-prod.tgz
